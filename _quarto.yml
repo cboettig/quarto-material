@@ -19,12 +19,16 @@ website:
 
 format:
   html:
-#    theme: [assets/scss/quarto-material-kit.scss]
-    css: [assets/css/nucleo-icons.css, assets/css/quarto-material-kit.css]
+    page-layout: custom
+    css:
+      - assets/css/nucleo-icons.css
+      - assets/css/quarto-material-kit.css
+      - assets/css/custom.css
     include-after-body: [assets/html/footer.html]
     title-block-banner: assets/img/bg3.jpg
-    template-partials:
-      - assets/partials/title-block.html
-
+    template: assets/partials/html.template
+#    template-partials:
+#      - assets/partials/title-block.html
+#      - assets/partials/toc.html
 
 
