@@ -2,49 +2,49 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Template",
+    "title": "",
     "section": "",
     "text": "Button\n\n\n With icon\n\n\n\n\nCompile SASS\nlibrary(sass)\nsass(sass_file(\"assets/scss/quarto-material-kit.scss\"),\n     output  = \"assets/css/quarto-material-kit.css\")"
   },
   {
     "objectID": "index.html#quarto",
     "href": "index.html#quarto",
-    "title": "Template",
+    "title": "",
     "section": "",
     "text": "Button\n\n\n With icon\n\n\n\n\nCompile SASS\nlibrary(sass)\nsass(sass_file(\"assets/scss/quarto-material-kit.scss\"),\n     output  = \"assets/css/quarto-material-kit.css\")"
   },
   {
     "objectID": "index.html#tabsets",
     "href": "index.html#tabsets",
-    "title": "Template",
+    "title": "",
     "section": "Tabsets",
     "text": "Tabsets\n\nRPython\n\n\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\n\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)"
   },
   {
     "objectID": "index.html#including-plots",
     "href": "index.html#including-plots",
-    "title": "Template",
+    "title": "",
     "section": "Including Plots",
     "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "about",
+    "title": "",
     "section": "",
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
   },
   {
     "objectID": "about.html#quarto",
     "href": "about.html#quarto",
-    "title": "about",
+    "title": "",
     "section": "",
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
   },
   {
     "objectID": "about.html#running-code",
     "href": "about.html#running-code",
-    "title": "about",
+    "title": "",
     "section": "Running Code",
     "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
   }
