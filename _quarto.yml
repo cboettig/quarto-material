@@ -1,5 +1,5 @@
 project:
-  title: "quarto-project-template"
+  title: ""
   type: website
 
 website:
@@ -7,13 +7,19 @@ website:
   repo-url: https://github.com/cboettig/quarto-material
   repo-actions: [edit, issue]
 
-  navbar:
-    background: primary
-    search: true
+  sidebar:
+    background: "#1A237E"
+    foreground: "#f8f9fa"
+    contents:
+      - about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/
+        aria-label: GitHub
 
 format:
   html:
-    theme: [yeti]
-    css: [assets/css/material-kit.css]
+#    theme: [assets/scss/quarto-material-kit.scss]
+    css: [assets/css/nucleo-icons.css, assets/css/quarto-material-kit.css]
     include-after-body: [assets/html/footer.html]
 

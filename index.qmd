@@ -4,12 +4,59 @@ title: "Template"
 
 ## Quarto
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+<button class="btn btn-info" type="button">Button</button>
 
-```{r}
-1 + 1
+<button class="btn btn-icon btn-3 btn-success" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-button-play"></i></span>
+  <span class="btn-inner--text">With icon</span>
+</button>
+
+<button class="btn btn-icon btn-2 btn-primary" type="button">
+	<span class="btn-inner--icon"><i class="ni ni-bulb-61"></i></span>
+</button>
+
+
+
+Compile SASS
+
+```r
+library(sass)
+sass(sass_file("assets/scss/quarto-material-kit.scss"),
+     output  = "assets/css/quarto-material-kit.css")
 ```
 
+## Tabsets
+
+::: {.panel-tabset}
+## R
+
+``` {.r}
+fizz_buzz <- function(fbnums = 1:50) {
+  output <- dplyr::case_when(
+    fbnums %% 15 == 0 ~ "FizzBuzz",
+    fbnums %% 3 == 0 ~ "Fizz",
+    fbnums %% 5 == 0 ~ "Buzz",
+    TRUE ~ as.character(fbnums)
+  )
+  print(output)
+}
+```
+
+## Python
+
+``` {.python}
+def fizz_buzz(num):
+  if num % 15 == 0:
+    print("FizzBuzz")
+  elif num % 5 == 0:
+    print("Buzz")
+  elif num % 3 == 0:
+    print("Fizz")
+  else:
+    print(num)
+```
+
+:::
 
 
 ## Including Plots
