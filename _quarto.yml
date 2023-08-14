@@ -7,7 +7,7 @@ website:
   repo-url: https://github.com/cboettig/quarto-material
   repo-actions: [edit, issue]
 
-  sidebar:
+  navbar:
     background: "#1A237E"
     foreground: "#f8f9fa"
     contents:
@@ -22,4 +22,9 @@ format:
 #    theme: [assets/scss/quarto-material-kit.scss]
     css: [assets/css/nucleo-icons.css, assets/css/quarto-material-kit.css]
     include-after-body: [assets/html/footer.html]
+    title-block-banner: assets/img/bg3.jpg
+    template-partials:
+      - assets/partials/title-block.html
+
+
 
