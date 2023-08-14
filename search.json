@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
-    "section": "",
-    "text": "Button\n\n\n With icon\n\n\n\n\nCompile SASS\nlibrary(sass)\nsass(sass_file(\"assets/scss/quarto-material-kit.scss\"),\n     output  = \"assets/css/quarto-material-kit.css\")"
-  },
-  {
     "objectID": "index.html#quarto",
     "href": "index.html#quarto",
     "title": "",
-    "section": "",
-    "text": "Button\n\n\n With icon\n\n\n\n\nCompile SASS\nlibrary(sass)\nsass(sass_file(\"assets/scss/quarto-material-kit.scss\"),\n     output  = \"assets/css/quarto-material-kit.css\")"
+    "section": "Quarto",
+    "text": "Quarto\n\nButton\n\n\n With icon\n\n\n\n\nCompile SASS\nlibrary(sass)\nsass(sass_file(\"assets/scss/quarto-material-kit.scss\"),\n     output  = \"assets/css/quarto-material-kit.css\")"
   },
   {
     "objectID": "index.html#tabsets",
@@ -28,18 +21,11 @@
     "text": "Including Plots\nYou can also embed plots, for example:\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
     "objectID": "about.html#quarto",
     "href": "about.html#quarto",
     "title": "",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "section": "Quarto",
+    "text": "Quarto\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
   },
   {
     "objectID": "about.html#running-code",
