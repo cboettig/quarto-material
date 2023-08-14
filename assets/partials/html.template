@@ -52,7 +52,7 @@ $endfor$
   }
 </style>
 <div class="page-header min-height-400" style="background-image: url($title-block-banner$);" loading="lazy">
-<span class="mask bg-gradient-light opacity-3"></span>
+$if(title-block-mask)$$title-block-mask$$endif$
 </div>
 </header>
 
@@ -67,7 +67,16 @@ $table-of-contents$
 $endif$
 
 <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6 mb-4">
+
+<section class="position-relative">
+<div class="container">
+<div class="row">
+<div class="col-12 mx-auto">
 $body$
+</div>
+</div>
+</div>
+</section>
 </div>
 
 $for(include-after)$

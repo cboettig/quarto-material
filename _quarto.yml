@@ -10,7 +10,7 @@ website:
   navbar:
     background: "#1A237E"
     foreground: "#f8f9fa"
-    contents:
+    left:
       - about.qmd
     tools:
       - icon: github
@@ -19,13 +19,14 @@ website:
 
 format:
   html:
-    page-layout: custom
+    page-layout: custom # change to full for narrower layout, see https://quarto.org/docs/output-formats/page-layout.html
     css:
       - assets/css/nucleo-icons.css
       - assets/css/quarto-material-kit.css
       - assets/css/custom.css
     include-after-body: [assets/html/footer.html]
     title-block-banner: assets/img/bg3.jpg
+    title-block-mask: '<span class="mask bg-gradient-light opacity-2"></span>'
     template: assets/partials/html.template
 #    template-partials:
 #      - assets/partials/title-block.html
