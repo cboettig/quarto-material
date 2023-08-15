@@ -14,18 +14,32 @@
     "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
   },
   {
-    "objectID": "index.html#quarto",
-    "href": "index.html#quarto",
+    "objectID": "index.html#material-kit-elements",
+    "href": "index.html#material-kit-elements",
     "title": "",
-    "section": "Quarto",
-    "text": "Quarto\n\nButton\n\n\n With icon\n\n\n\n\nCompile SASS\nlibrary(sass)\nsass(sass_file(\"assets/scss/quarto-material-kit.scss\"),\n     output  = \"assets/css/quarto-material-kit.css\")"
+    "section": "Material-kit elements",
+    "text": "Material-kit elements\nWe can use raw html for arbitary material-kit elements\n\nButton\n\n\n With icon"
+  },
+  {
+    "objectID": "index.html#bslib",
+    "href": "index.html#bslib",
+    "title": "",
+    "section": "bslib",
+    "text": "bslib\nWe can use the {bslib} R package to create bootstrap elements such as value boxes:\n\n\n\n\n\n\n\n\n\n\n\n\n1st value\n123\nThe 1st detail\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2nd value\n456\nThe 2nd detail\nThe 3rd detail\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3rd value\n789\nThe 4th detail\nThe 5th detail\nThe 6th detail"
+  },
+  {
+    "objectID": "index.html#sass",
+    "href": "index.html#sass",
+    "title": "",
+    "section": "SASS",
+    "text": "SASS\nAt the moment I don’t have sass compiling by quarto working, but we can use the {sass} R package to compile SASS to CSS used in quarto:\nlibrary(sass)\nsass(sass_file(\"assets/scss/quarto-material-kit.scss\"),\n     output  = \"assets/css/quarto-material-kit.css\")"
   },
   {
     "objectID": "index.html#tabsets",
     "href": "index.html#tabsets",
     "title": "",
     "section": "Tabsets",
-    "text": "Tabsets\n\nRPython\n\n\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\n\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)"
+    "text": "Tabsets\nWe can create tabsets, e.g. showing R and python use:\n\nRPython\n\n\nfizz_buzz &lt;- function(fbnums = 1:50) {\n  output &lt;- dplyr::case_when(\n    fbnums %% 15 == 0 ~ \"FizzBuzz\",\n    fbnums %% 3 == 0 ~ \"Fizz\",\n    fbnums %% 5 == 0 ~ \"Buzz\",\n    TRUE ~ as.character(fbnums)\n  )\n  print(output)\n}\n\n\ndef fizz_buzz(num):\n  if num % 15 == 0:\n    print(\"FizzBuzz\")\n  elif num % 5 == 0:\n    print(\"Buzz\")\n  elif num % 3 == 0:\n    print(\"Fizz\")\n  else:\n    print(num)"
   },
   {
     "objectID": "index.html#including-plots",
