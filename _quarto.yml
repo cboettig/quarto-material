@@ -6,9 +6,9 @@ website:
   page-navigation: true
   repo-url: https://github.com/cboettig/quarto-material
   repo-actions: [edit, issue]
-
+#"#1A237E"
   navbar:
-    background: "#1A237E"
+    background: "dark"
     foreground: "#f8f9fa"
     left:
       - about.qmd
@@ -16,6 +16,19 @@ website:
       - icon: github
         href: https://github.com/
         aria-label: GitHub
+
+  # Sidebar requires layout as full or article, not 'custom'
+  sidebar:
+    style: "floating"
+    contents:
+      - section: "Basics"
+        contents:
+          - about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/
+        aria-label: GitHub
+
 
 format:
   html:
