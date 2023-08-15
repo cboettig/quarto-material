@@ -2,7 +2,14 @@
 title: "Template"
 ---
 
-## Quarto
+# Quarto Material
+
+<section class="m-6">
+
+
+## Material-kit elements
+
+We can use raw html for [arbitary material-kit elements](https://demos.creative-tim.com/material-kit/index.html)
 
 <button class="btn btn-info" type="button">Button</button>
 
@@ -15,9 +22,65 @@ title: "Template"
 	<span class="btn-inner--icon"><i class="ni ni-bulb-61"></i></span>
 </button>
 
+</section>
+<section class="m-6">
+
+## bslib
+
+We can use the `{bslib}` R package to create bootstrap elements such as value boxes:
+
+```{r include = FALSE}
+library(bslib)
+library(shiny)
+library(htmltools)
+library(plotly)
+library(leaflet)
+library(bsicons)
+```
 
 
-Compile SASS
+```{r echo=FALSE}
+
+vbs <- list(
+  value_box(
+    title = "1st value",
+    value = "123",
+    showcase = bs_icon("bar-chart"),
+    p("The 1st detail")
+  ),
+  value_box(
+    title = "2nd value",
+    value = "456",
+    showcase = bs_icon("graph-up"),
+    p("The 2nd detail"),
+    p("The 3rd detail")
+  ),
+  value_box(
+    title = "3rd value",
+    value = "789",
+    showcase = bs_icon("pie-chart"),
+    p("The 4th detail"),
+    p("The 5th detail"),
+    p("The 6th detail")
+  )
+)
+
+layout_column_wrap(
+  width = "250px",
+  !!!vbs
+)
+
+
+```
+
+
+</section>
+<section class="m-6">
+
+
+## SASS
+
+At the moment I don't have sass compiling by quarto working, but we can use the `{sass}` R package to compile SASS to CSS used in quarto:
 
 ```r
 library(sass)
@@ -25,7 +88,14 @@ sass(sass_file("assets/scss/quarto-material-kit.scss"),
      output  = "assets/css/quarto-material-kit.css")
 ```
 
+
+</section>
+<section class="m-6">
+
+
 ## Tabsets
+
+We can create tabsets, e.g. showing R and python use: 
 
 ::: {.panel-tabset}
 ## R
@@ -59,6 +129,10 @@ def fizz_buzz(num):
 :::
 
 
+</section>
+<section class="m-6">
+
+
 ## Including Plots
 
 You can also embed plots, for example:
@@ -68,3 +142,6 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+</section>

@@ -11,7 +11,11 @@ website:
     background: "dark"
     foreground: "#f8f9fa"
     left:
-      - about.qmd
+      - file: index.qmd
+        icon: house-door-fill
+        text: home
+      - file: about.qmd
+        icon: book
     tools:
       - icon: github
         href: https://github.com/
@@ -23,6 +27,7 @@ website:
     contents:
       - section: "Basics"
         contents:
+          - index.qmd
           - about.qmd
     tools:
       - icon: github
