@@ -19,6 +19,9 @@ jobs:
 #        with:
 #          tinytex: true
 
+      - name: system deps
+        run: sudo apt-get update && sudo apt install libproj-dev libgdal-dev libgeos-dev libudunits2-dev
+
       # add software dependencies here
       - uses: r-lib/actions/setup-r@v2
 
